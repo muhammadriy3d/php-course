@@ -2,28 +2,26 @@
 
 ## Primative: basic datatype
 
-strings - mixed characters
-integers - whole numbers
-floats - points numbers
-bool - true, false
-time -
-date - 
+string - mixed characters
+integer - whole numbers
+float - points numbers
+boolean - true, false
 
 ## Declare var
 
 assign var in memory then name it after give it a value after equal sign
 
-```
-$x = 1;
-$str1 = "hello";
-// ...
+```php
+  $x = 1;
+  $str1 = "hello";
+  // ...
 ```
 
 ## integers
 
-```
-echo 1.2 . "<br>"; //output: 1.2 \n
-echo 1 . 2 . "<br>"; //output: 12 \n
+```php
+  echo 1.2 . "<br>"; //output: 1.2 \n
+  echo 1 . 2 . "<br>"; //output: 12 \n
 ```
 
 ### NOTICE: **
@@ -43,33 +41,33 @@ e.g: `$_underscore = 123;`
 
 single qoute is just get me the exact same variable as string not value
 
-```
-$x = 3;
-echo '$x'; // output: $x
-echo "$x"; // output: 3
+```php
+  $x = 3;
+  echo '$x'; // output: $x
+  echo "$x"; // output: 3
 ```
      
 ## datatype print: var_dump(...)
 
-```
-$x = 1;
-var_dump($x); // output: integer(1)
+```php
+  $x = 1;
+  var_dump($x); // output: integer(1)
 
-$txt = "abc";
-var_dump($txt); // output: string(3) "abc"
+  $txt = "abc";
+  var_dump($txt); // output: string(3) "abc"
 
-$isTrue = true;
-var_dump($isTrue); // output: bool(true)
-echo $isTrue; // output: 1
-echo !$isTrue; // output: null
+  $isTrue = true;
+  var_dump($isTrue); // output: bool(true)
+  echo $isTrue; // output: 1
+  echo !$isTrue; // output: null
 ```
 
 ## Constaints
 
 cannot be changed later
 
-```
-define(CONST_NAME, VALUE, ?BOOL=>CASE_INSENSITIVE);
+```php
+  define(CONST_NAME, VALUE, ?BOOL=>CASE_INSENSITIVE);
 ```
 
 `echo CONST_NAME, ...`
@@ -78,7 +76,7 @@ define(CONST_NAME, VALUE, ?BOOL=>CASE_INSENSITIVE);
 
 if something come true then do it otherwise do that
 
-```yaml
+```shell
   if (condition satisfaied) then
     execute this 
   otherwise
@@ -126,10 +124,10 @@ if something come true then do it otherwise do that
 ```   
 
 ```php
-if (condition);  <-- if is not the case anymore
-{
-  //execution
-}
+  if (condition);  <-- if is not the case anymore
+  {
+    //execution
+  }
 ```
 
 #### NOTES:
@@ -143,6 +141,7 @@ if (condition);  <-- if is not the case anymore
 ### NOTES: Switch statement
 
 - Switch statement cannot handle many operations it is just a one operation with cases 
+  
   ```php 
     // incorrect code
     $x = 2;
@@ -155,8 +154,9 @@ if (condition);  <-- if is not the case anymore
   ```
   
 - Switch cannot handle operators cases it is only equal something.
+
   ```php 
-    // incorrect code
+	// incorrect code
     $x = 2;
     switch ($x) 
     {
@@ -165,4 +165,8 @@ if (condition);  <-- if is not the case anymore
     }
   
   ```
-  
+
+## Credits
+
+© 2023 Muhammad Riyad, All right reversed
+
