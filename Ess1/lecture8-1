@@ -1,0 +1,14 @@
+<?php 
+
+  function getDay() {
+    return date("D, d-m-Y");
+  }
+  switch ($today) 
+  {
+    case "Wed, 22-11-2023":
+      echo $today;
+      break;
+    default: 
+      echo $today;
+  }
+?>
